@@ -1,0 +1,17 @@
+{
+	"name": "Azure Search Extension",
+	"version": "1.0",
+	"icons": {
+		"48": "icon-48.png"
+	},
+	"omnibox": { "keyword" : "azure" },
+	"icons": {
+	    "16": "icon-16.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	  },
+	"description": "Search fast in omnibox",
+	"manifest_version": 2
+}
