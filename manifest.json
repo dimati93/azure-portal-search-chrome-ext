@@ -1,17 +1,25 @@
 {
-	"name": "Azure Search Extension",
+	"name": "Azure Portal Search",
 	"version": "1.0",
-	"icons": {
-		"48": "icon-48.png"
+	"omnibox": {
+		"keyword": "portal"
 	},
-	"omnibox": { "keyword" : "azure" },
 	"icons": {
-	    "16": "icon-16.png"
+		"16": "icons/icon-16.png",
+		"32": "icons/icon-32.png",
+		"48": "icons/icon-48.png",
+		"64": "icons/icon-64.png"
 	},
 	"background": {
-		"scripts": ["background.js"],
+		"scripts": [
+			"background.js"
+		],
 		"persistent": false
-	  },
-	"description": "Search fast in omnibox",
+	},
+	"permissions": [
+		"cookies",
+		"*://*.azure.com/*"
+	],
+	"description": "Search fast through your Azure Portal resources directly from omnibox",
 	"manifest_version": 2
 }
